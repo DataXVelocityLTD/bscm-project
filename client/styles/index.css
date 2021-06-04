@@ -1,0 +1,71 @@
+body{
+    background: rgb(4, 2, 131) !important;
+    padding: 20px;
+}
+
+/* INDEX PAGE */
+.brand-text {
+    color: rgb(128, 0, 64);
+    position: relative;
+    font-size: 15px;
+    color:rgb(237, 173, 33);
+    top: 50;
+    margin-left: 20px;
+}
+.first-select{
+    display: block;
+    margin-left: auto;
+    background: rgb(4, 2, 131);
+    color: white;
+    padding: 3px 15px;
+    border-radius: 7px;
+    position: relative;
+    top: -30px;
+}
+
+
+/* ENTER EMAIL PAGE */
+.form-container{
+    background: rgb(255, 253, 253);
+    border-radius: 20px;
+    padding: 30px;
+}
+.shift-section{
+    position: relative;
+    top:70px;
+}
+
+.login-input{
+    border-radius: 10px !important;
+    border-color: rgb(122, 158, 224) !important;
+    width: 100% !important;
+}
+.lnk-forget{
+    text-decoration: none;
+    color:rgb(0, 132, 255);
+    font-size: 8px;
+    font-weight: bold;
+    float: right;
+    margin-right:5px;
+    position:absolute;
+    top:71%;
+    left:59%;
+}
+.login-submit{
+    display: block;
+    border: 1px solid rgb(18, 202, 18);
+    border-radius: 20px;
+    background: rgb(18, 202, 18);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0 auto;
+
+}
+@media(max-width: 575px){
+    .my-section{
+        width: 50%;
+    }
+}
