@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>BSC | Home</title>
 
     <script src="https://kit.fontawesome.com/06a228e990.js" crossorigin="anonymous"></script>
@@ -35,13 +35,31 @@
             width: 400px;
             margin: 0 auto;
             margin-top: 0;
-            /* position: relative; */
-            /* top: -5px; */
             background-image: url("assets/images/Transparent Full HLT Vector.png");
             background-size: contain;
             background-repeat: no-repeat;
             opacity: 0.25;
         }
+
+        @media screen and (max-width: 768px) {
+            .fa-key{
+                font-size: 2.7rem;
+                margin-right: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            #background-img {
+                height: 300px; 
+                width: 300px;
+            }
+
+            .fa-key{
+                font-size: 1.3rem;
+            }
+        }
+
+       
     </style>
 </head>
 
@@ -49,24 +67,27 @@
     <div id="header-container">
         <h4 class="brand-text">BSC - Manager<sup>TM</sup></h4>
         <select class="selectpicker first-select" data-width="fit">
-            <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+            <option data-content='<span class="flag-icon flag-icon-us">English</span>'>English</option>
         </select>
     </div>
-    <div id="page-icon">
-        <img class="d-block mx-auto" src="assets/icons/HLT Transparent.png" width="10%" alt="">
+    <div class="wrapper">
+        <div id="page-icon">
+            <img class="d-block mx-auto company__logo" src="assets/icons/HLT Transparent.png" alt="BSCM Logo">
+        </div>
+        <h1 style="text-align: center;"> Studio Certification</h1>
+        <h1 style="text-align: center;">Manager Admin</h1>
+        <a href="login.php" class="btn btn-default d-block mx-auto fs-3 fw-bold text-white border border-success resize"><i class="fas fa-key"></i> Login</a>
+        <div id="background-img"></div>
     </div>
-    <h1 style="text-align: center;"> Studio Certification</h1>
-    <h1 style="text-align: center;">Manager Admin</h1>
-    <a href="login.php" class="btn btn-default d-block mx-auto fs-3 fw-bold text-white border border-success"><i class="fas fa-key"></i> Login</a>
-    <!-- <a href="admin.php">Login</a> -->
-
-    <div id="background-img"></div>
-
-
-<!-- <footer>
-<p style="color: green; text-align:center; margin-top:-70px;">Copyright: DataX Velocity LTD</p>
-</footer> -->
-<?php include('includes/footer.php'); ?>
+    
+    <footer class="admin__index__footer">
+        <a class="top__link" href="#">Copyright: DataX Velocity LTD</a>
+        <div class="bottom__links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+            <a href="#">User Agreement</a>
+        </div>
+    </footer>
 
 </body>
 

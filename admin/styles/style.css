@@ -6,27 +6,120 @@ body{
 /* INDEX PAGE */
 #header-container{
     width: 100%;
-    /* background: red; */
-    margin-top: -40px;
+    margin-top: 1rem;
 }
 .brand-text {
-    /* color: rgb(128, 0, 64); */
-    color: yellow;
     position: relative;
     font-size: 15px;
     color:rgb(237, 173, 33);
-    top: 50;
+    top: 5px;
     margin-left: 20px;
 }
 .first-select{
     display: block;
     margin-left: auto;
     background: rgb(4, 2, 131);
-    color: white;
+    color: #fff;
+    outline: none;
     padding: 3px 15px;
     border-radius: 7px;
     position: relative;
     top: -30px;
+}
+
+.company__logo {
+    width: 10%;
+}
+.admin__index__footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: -7rem;
+    align-items: center;
+    width: 100%;  
+}
+
+.admin__index__footer a{
+    color: rgb(11, 173, 11);
+}
+
+.top__link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(1, 85, 1);
+    margin-left: 5rem;
+}
+
+/* MEDIA RULES */
+@media screen and (max-width: 768px) {
+    .brand-text {
+        font-size: 21px;
+    }
+    
+    .first-select{
+       padding: 10px;
+       margin-right: 20px;
+       font-size: 1.3rem;
+    }
+
+    #page-icon {
+        margin-top: -50px;
+    }
+
+    .resize {
+        width: 250px;
+        padding: 7px;
+    }
+
+    .company__logo {
+        width: 20%
+    }
+
+    .admin__index__footer a{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .brand-text {
+        font-size: 0.9rem;
+        margin-left: 5px;
+    }
+
+    .first-select{
+       padding: 2px;
+       font-size: 0.9rem;
+       margin-left: 260px;
+    }
+
+    #page-icon {
+        margin-top: -20px;
+    }
+
+    .resize {
+        width: 150px;
+        padding: 4px;
+    }
+    
+    .company__logo {
+        width: 28%
+    }
+    
+    .admin__index__footer a{
+        font-size: 0.9rem;
+    }
+
+    .bottom__links {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 
